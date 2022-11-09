@@ -17,7 +17,7 @@ export function Navbar() {
   ];
 
   return (
-    <header className="h-20 flex items-center border-b border-neutral-400 justify-between">
+    <header className="h-20 flex items-center border-b border-neutral-400 justify-between px-4 bg-primary">
       <NavLink to="/">
         <div className="font-serif font-bold text-xl">Legal AI</div>
       </NavLink>

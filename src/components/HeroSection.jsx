@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import HeroBg from '../assets/hero.svg';
 
 export function HeroSection() {
@@ -20,9 +21,9 @@ export function HeroSection() {
             </p>
           </div>
 
-          <button className="mt-4 action-button">
-            Fordere Deine Rechte ein!
-          </button>
+          <NavLink to="/intake">
+            <div className="mt-4 action-button">Fordere Deine Rechte ein!</div>
+          </NavLink>
         </div>
       </section>
 

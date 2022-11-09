@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Footer, Navbar } from './components';
-import { Home, HowItWorks, Services } from './pages';
+import { Home, HowItWorks, Intake, Services } from './pages';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
 
           <main className="min-h-[calc(100vh_-_15rem_-_0.1rem)]">
             <Routes>
+              <Route path="/intake" element={<Intake />} />
               <Route path="/our-services" element={<Services />} />
               <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/" element={<Home />} />

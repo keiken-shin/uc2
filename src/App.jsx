@@ -9,11 +9,13 @@ function App() {
         <div className="container">
           <Navbar />
 
-          <Routes>
-            <Route path="/our-services" element={<Services />} />
-            <Route path="/how-it-works" element={<HowItWorks />} />
-            <Route path="/" element={<Home />} />
-          </Routes>
+          <main className="min-h-[calc(100vh_-_15rem_-_0.1rem)]">
+            <Routes>
+              <Route path="/our-services" element={<Services />} />
+              <Route path="/how-it-works" element={<HowItWorks />} />
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </main>
 
           <Footer />
         </div>
